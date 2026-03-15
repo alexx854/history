@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Атлас советского плаката</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Roboto+Slab:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>Атлас советского плаката</h1>
+      <p class="subtitle">Интерактивный анализ визуального языка советского плаката</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Filters -->
+    <section class="filters-section" aria-label="Фильтры">
+      <div class="filter">
+        <label for="theme-filter">Тема</label>
+        <select id="theme-filter">
+          <option value="all">Все</option>
+        </select>
+      </div>
+
+      <div class="filter">
+        <label for="period-filter">Период</label>
+        <select id="period-filter">
+          <option value="all">Все</option>
+        </select>
+      </div>
+
+      <div class="filter">
+        <label for="image-filter">Ключевой образ</label>
+        <select id="image-filter">
+          <option value="all">Все</option>
+        </select>
+      </div>
+
+      <div class="filter-actions">
+        <button id="reset-filters" class="btn btn-secondary" type="button">
+          <i class="fa-solid fa-rotate-left"></i> Сбросить
+        </button>
+        <button id="random-compare" class="btn btn-secondary" type="button">
+          <i class="fa-solid fa-dice"></i> Случайные 2
+        </button>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section aria-label="Галерея плакатов">
+      <div class="section-header">
+        <h2>Коллекция</h2>
+        <div id="results-info" class="results-info"></div>
+      </div>
+
+      <div id="posters-grid" class="posters-grid"></div>
+    </section>
+
+    <!-- Compare Section -->
+    <section class="compare-section" aria-label="Сравнение">
+      <div class="compare-header">
+        <h2>Сравнение</h2>
+        <div class="compare-tools">
+          <button id="overlay-btn" class="btn btn-primary" type="button">
+            <i class="fa-solid fa-layer-group"></i> Наложение
+          </button>
+          <button id="clear-compare" class="btn btn-secondary" type="button">
+            <i class="fa-solid fa-xmark"></i> Очистить
+          </button>
+        </div>
+      </div>
+
+      <div id="compare-status" class="compare-status">Выбрано для сравнения: 0/2</div>
+
+      <div id="compare-cards" class="compare-cards"></div>
+
+      <div class="compare-notes-wrap">
+        <h3>Аналитические заметки</h3>
+        <div id="compare-notes" class="compare-notes">
+          Выберите два плаката для аналитического сравнения.
+        </div>
+      </div>
+    </section>
+
+    <!-- Overlay Panel -->
+    <section id="overlay-panel" class="overlay-panel hidden" aria-hidden="true">
+      <div class="overlay-header">
+        <h3>Наложение плакатов</h3>
+        <button id="overlay-close" class="btn btn-secondary" type="button">Закрыть</button>
+      </div>
+
+      <div class="overlay-stage" id="overlay-stage">
+        <img id="overlay-img-a" alt="Poster A">
+        <img id="overlay-img-b" alt="Poster B">
+      </div>
+
+      <div class="overlay-controls">
+        <label for="overlay-range">
+          Прозрачность верхнего слоя: <span id="overlay-value">50%</span>
+        </label>
+        <input id="overlay-range" type="range" min="0" max="100" value="50">
+        <div class="overlay-hint">Верхний слой — второй выбранный плакат.</div>
+      </div>
+    </section>
+
+  </main>
+  <!-- Modal -->
+  <div id="modal" class="modal hidden" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 id="modal-title">Аннотация</h3>
+        <button id="modal-close" class="modal-close" type="button" aria-label="Закрыть">×</button>
+      </div>
+      <div class="modal-body">
+        <img id="modal-image" alt="Poster preview">
+        <div id="modal-meta" class="modal-meta"></div>
+        <div id="modal-annotation" class="modal-annotation"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast -->
+  <div id="toast" class="toast hidden" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
