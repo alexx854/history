@@ -1,5 +1,5 @@
 // ======================
-// DATASET (12 items)
+// DATASET
 // ======================
 const postersData = [
   {
@@ -7,7 +7,7 @@ const postersData = [
     title: "Вступай в ряды Красной армии",
     author: "Б. В. Силкин",
     year: 1920,
-    theme: "война",
+    theme: "гражданская война",
     period: "1920-е",
     keyImages: ["солдат"],
     imageUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Join%20the%20ranks%20of%20the%20Red%20Army%2C%20Russian%20propaganda%20poster%201920.jpg",
@@ -29,7 +29,7 @@ const postersData = [
     title: "Красная Армия — вооружённая сила СССР...",
     author: "Агитпроп СССР",
     year: 1927,
-    theme: "война",
+    theme: "гражданская война",
     period: "1920-е",
     keyImages: ["солдат", "техника"],
     imageUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/Idn.duke.edu%20Soviet%20propaganda%20poster%20-%20Red%20Army%20Training%201927%20USSR%20%D0%9A%D1%80%D0%B0%D1%81%D0%BD%D0%B0%D1%8F%20%D0%90%D1%80%D0%BC%D0%B8%D1%8F--%D0%92%D0%BE%D0%BE%D1%80%D1%83%D0%B6%D0%B5%D0%BD%D0%BD%D0%B0%D1%8F%20%D1%81%D0%B8%D0%BB%D0%B0%20%D0%A1.%D0%A1.%D0%A1.%D0%A0.%20%D0%B4%D0%BB%D1%8F%20%D0%B7%D0%B0%D1%89%D0%B8%D1%82%D1%8B%20%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%B5%D1%81%D0%BE%D0%B2%20%D1%82%D1%80%D1%83%D0%B4%D1%8F%D1%89%D0%B8%D1%85%D1%81%D1%8F%20No%20known%20copyright.jpg",
@@ -117,7 +117,7 @@ const postersData = [
     title: "За Родину!",
     author: "А. Г. Ситтаро",
     year: 1941,
-    theme: "война",
+    theme: "великая отечественная война",
     period: "1940-е",
     keyImages: ["солдат", "враг"],
     imageUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/1941.%20%D0%97%D0%B0%20%D0%A0%D0%BE%D0%B4%D0%B8%D0%BD%D1%83.jpg",
@@ -128,14 +128,377 @@ const postersData = [
     title: "Прибалтика освобождена!",
     author: "Неизвестный художник",
     year: 1944,
-    theme: "война",
+    theme: "великая отечественная война",
     period: "1940-е",
     keyImages: ["солдат"],
     imageUrl: "https://commons.wikimedia.org/wiki/Special:FilePath/1944.Poster.The%20Baltic%20States%20are%20liberated%21.jpg",
     annotation: "Плакат победного нарратива: освобождение оформляется как восстановление порядка и справедливости."
-  }
+  },
+{
+id: 13,
+title: "Красный подарок белому плану",
+author: "Д. С. Моор",
+year: 1920,
+theme: "гражданская война",
+period: "1920-е",
+keyImages: ["солдат", "враг"],
+imageUrl: "https://aif-s3.aif.ru/images/015/487/1ecba7ef12e36e379bcaca2d84466bc4.jpg",
+annotation: "Плакат усиливает мобилизацию через образы красных бойцов, противопоставляя их белогвардейским угрозам."
+},
+{
+id: 14,
+title: "Царь, поп и кулак",
+author: "А. П. Апсит",
+year: 1918,
+theme: "гражданская война",
+period: "1910-е",
+keyImages: ["враг", "рабочий"],
+imageUrl: "https://avatars.mds.yandex.net/i?id=0a1c4a899dc6fd05ec43751804c2bdaf_l-5293830-images-thumbs&ref=rim&n=13&w=800&h=800",
+annotation: "Бинарная оппозиция классовых врагов: царь, поп и кулак как символы контрреволюции."
+},
+{
+id: 15,
+title: "Красная Армия раздавила белогвардейских паразитов",
+author: "Неизвестный художник",
+year: 1920,
+theme: "гражданская война",
+period: "1920-е",
+keyImages: ["солдат", "техника"],
+imageUrl: "https://catalog.shm.ru/api/spf/OXRrxH-lU-E7JZwCzzNuTT_CHqn2C-a5YT8Yj-n9erL8qCQBqOSt9myuFMR2IZWc.webp?w=1000&h=1000",
+annotation: "Героизация Красной армии в борьбе с Деникиным и Колчаком через динамичную композицию."
+},
+{
+id: 16,
+title: "Ты записался добровольцем?",
+author: "Д. С. Моор",
+year: 1920,
+theme: "гражданская война",
+period: "1920-е",
+keyImages: ["солдат"],
+imageUrl: "https://topwar.ru/uploads/posts/2023-09/2991050_big.jpg",
+annotation: "Прямой вопрос к зрителю усиливает личную ответственность за победу в Гражданской войне."
+},
+{
+id: 17,
+title: "Врангель еще жив! Добей его без пощады!",
+author: "В. Н. Денисов",
+year: 1920,
+theme: "гражданская война",
+period: "1920-е",
+keyImages: ["враг", "солдат"],
+imageUrl: "https://img.riamediabank.ru/images/vol1%2Fmedia%2Foriginal%2Fold%2F75%2F15%2F751506_hires_0%3A0%3A0%3A0_1400x1000_80_9_1_0J%2FQsNCy0LXQuyDQkdCw0LvQsNCx0LDQvdC%2B0LIgIzc1MTUwNg%3D%3D_75%3A89_751506-rus_ria-751506-preview_ojvb6q_8dd62ffcb3b6a6f415dcb14b21c6e617.jpg",
+annotation: "Красноармейцы призываются добить последнего врага - символ окончательной победы над белогвардейцами"
+},
+,
+{
+  id: 18,
+  title: "Не болтай!",
+  author: "Нина Ватолина",
+  year: 1941,
+  theme: "великая отечественная война",
+  period: "1940-е",
+  keyImages: ["женщина"],
+  imageUrl: "https://omsklib.ru/files/news/2020/03/exib/plakat-75pobeda/19.jpg",
+  annotation: "Плакат о военной тайне: образ женщины подчёркивает ответственность тыла за безопасность фронта."
+},
+{
+  id: 19,
+  title: "Воин Красной Армии, спаси!",
+  author: "Виктор Корецкий",
+  year: 1942,
+  theme: "великая отечественная война",
+  period: "1940-е",
+  keyImages: ["ребенок"],
+  imageUrl: "https://virtualrm.spb.ru/files/images/%20Корецкий%20Воин%20Красной%20Армии,спаси!%201942%20Хромолитография%2043,9%20х%2031.preview.jpg",
+  annotation: "Плакат акцентирует защиту мирных жителей и моральную обязанность солдата спасти ребенка."
+},
+{
+  id: 20,
+  title: "Всё для фронта! Всё для победы!",
+  author: "Неизвестен",
+  year: 1941,
+  theme: "великая отечественная война",
+  period: "1940-е",
+  keyImages: ["рабочие"],
+  imageUrl: "https://rusmuseumvrm.ru/data/collections/engraving/gr.pl.-245/43986_mainfoto_03.jpg",
+  annotation: "Мобилизационный лозунг: вся экономика и быт подчиняются задаче военной победы."
+},
+{
+  id: 21,
+  title: "Отстоим Москву!",
+  author: "Неизвестен",
+  year: 1941,
+  theme: "великая отечественная война",
+  period: "1940-е",
+  keyImages: ["солдат"],
+  imageUrl: "https://sun9-71.userapi.com/s/v1/ig1/YEhJ8wfNUKrMm-ZiEb7UrNfa-F7KpP48SjDy3iJgynaXl3hy8GUYd9E3DbqkoizIZnt0v5df.jpg?quality=96&as=32x45%2C48x68%2C72x101%2C108x152%2C160x225%2C240x338%2C360x507%2C480x675%2C540x760%2C640x901%2C720x1013%2C1080x1520%2C1280x1801%2C1440x2026%2C1535x2160&from=bu&cs=640x0",
+  annotation: "Плакат подчёркивает значимость обороны столицы как символа сохранения государства."
+},
+{
+  id: 22,
+  title: "Смерть немецким оккупантам!",
+  author: "Неизвестен",
+  year: 1942,
+  theme: "великая отечественная война",
+  period: "1940-е",
+  keyImages: ["враг"],
+  imageUrl: "https://ir.ozone.ru/s3/multimedia-n/6301000199.jpg",
+  annotation: "Антинацистская пропаганда: образ врага как объекта жёсткой агрессии и уничтожения."
+},
+{
+  id: 23,
+  title: "Наши силы неисчислимы",
+  author: "В. Корецкий",
+  year: 1941,
+  theme: "великая отечественная война",
+  period: "1940-е",
+  keyImages: ["армия"],
+  imageUrl: "https://cdn.gallerix.asia/sr/_UNK/1973977528/1513340135.jpg",
+  annotation: "Плакат подчёркивает мощь и массовость Красной армии как фактор неизбежной победы."
+},
+{
+  id: 24,
+  title: "Берлин будет взят!",
+  author: "Неизвестен",
+  year: 1945,
+  theme: "великая отечественная война",
+  period: "1940-е",
+  keyImages: ["армия"],
+  imageUrl: "https://static.auction.ru/offer_images/cmn8/2018/12/14/11/big/I/I8UWW9OhMQK/otkrytka_1945_medal_za_vzjatie_berlina_chistaja.jpg",
+  annotation: "Плакат финальной фазы войны: символический акцент на штурме столицы Третьего рейха."
+},
+{
+  id: 25,
+  title: "Освободим Европу от фашизма!",
+  author: "Неизвестен",
+  year: 1944,
+  theme: "великая отечественная война",
+  period: "1940-е",
+  keyImages: ["солдат"],
+  imageUrl: "https://ic.pics.livejournal.com/balabin_1712/74266838/180433/180433_1000.jpg",
+  annotation: "Плакат о наступлении и освободительной миссии Красной армии в Европе."
+},
+{
+  id: 26,
+  title: "Мстите за нас!",
+  author: "В. Корецкий",
+  year: 1942,
+  theme: "великая отечественная война",
+  period: "1940-е",
+  keyImages: ["женщина"],
+  imageUrl: "https://www.grsmu.by/ru/files/megacat/image/1430/1920/1685021549.jpg",
+  annotation: "Эмоционально‑мобилизационный плакат: образ жертвы призывает к мести и усилению усилий фронта."
+},
+{
+  id: 27,
+  title: "Слава героям фронта!",
+  author: "Неизвестен",
+  year: 1943,
+  theme: "великая отечественная война",
+  period: "1940-е",
+  keyImages: ["армия"],
+  imageUrl: "https://img02litfund.ru/images/lots/137/137-271-3538-1-VC196056.jpg",
+  annotation: "Плакат прославляет героизм солдат и формирует культ воинских заслуг."
+},
+{
+  id: 28,
+  title: "Фашизм будет уничтожен!",
+  author: "Неизвестен",
+  year: 1942,
+  theme: "великая отечественная война",
+  period: "1940-е",
+  keyImages: ["враг"],
+  imageUrl: "https://cs11.pikabu.ru/post_img/big/2019/06/02/4/1559454055162223722.jpg",
+  annotation: "Сильный антифашистский посыл: фашизм изображён как неизбежно обречённая идеология."
+},
+{
+  id: 29,
+  title: "Победа будет за нами!",
+  author: "Неизвестен",
+  year: 1941,
+  theme: "великая отечественная война",
+  period: "1940-е",
+  keyImages: ["армия"],
+  imageUrl: "https://d2u1z1lopyfwlx.cloudfront.net/thumbnails/c83702e5-dc23-5279-beb3-d5726e4236a9/a2727c3d-a259-54ea-ae1f-04fe1478be35.jpg",
+  annotation: "Плакат о победе: внушает уверенность и оптимизм, подчёркивая силу коллектива."
+},
+{
+  id: 30,
+  title: "Рабочий, защищай революцию!",
+  author: "Неизвестен",
+  year: 1919,
+  theme: "гражданская война",
+  period: "1920-е",
+  keyImages: ["рабочие"],
+  imageUrl: "https://i1.wp.com/lenin.shm.ru/wp-content/uploads/2020/11/16.jpg?fit=957%2C1500&ssl=1",
+  annotation: "Плакат подчёркивает роль рабочего класса как опоры революционного режима."
+},
+{
+  id: 31,
+  title: "Красная армия непобедима",
+  author: "Неизвестен",
+  year: 1920,
+  theme: "гражданская война",
+  period: "1920-е",
+  keyImages: ["армия"],
+  imageUrl: "https://artchive.ru/res/media/img/oy400/work/c64/104944@2x.jpg",
+  annotation: "Плакат создаёт образ абсолютной силы Красной армии как политической и моральной опоры власти."
+},
+{
+  id: 32,
+  title: "Да здравствует Советская власть!",
+  author: "Неизвестен",
+  year: 1918,
+  theme: "революция",
+  period: "1910-е",
+  keyImages: ["массы"],
+  imageUrl: "https://storage07.litfund.ru/images/lots/463/463-149-10725-36-Y1142595.jpg",
+  annotation: "Плакат поддержки новой власти: подчёркивает легитимность и массовую поддержку советской системы."
+},
+{
+  id: 33,
+  title: "Вперёд к коммунизму!",
+  author: "Неизвестен",
+  year: 1920,
+  theme: "революция",
+  period: "1920-е",
+  keyImages: ["рабочие"],
+  imageUrl: "https://cs13.pikabu.ru/post_img/big/2023/05/24/5/1684912809121283820.jpg",
+  annotation: "Плакат рисует идеальный будущий образ: коммунизм как цель и смысл дальнейшего развития."
+},
+{
+  id: 34,
+  title: "Рабочий класс — сила революции",
+  author: "Неизвестен",
+  year: 1919,
+  theme: "революция",
+  period: "1920-е",
+  keyImages: ["рабочие"],
+  imageUrl: "https://www.moscowbooks.ru/image/ap/t1/331/331680/331680.jpg",
+  annotation: "Плакат подчёркивает центральную роль рабочего класса как ведущей силы революционных изменений."
+},
+{
+  id: 35,
+  title: "Вперёд на защиту революции!",
+  author: "Неизвестен",
+  year: 1919,
+  theme: "гражданская война",
+  period: "1920-е",
+  keyImages: ["солдат"],
+  imageUrl: "https://artchive.ru/res/media/img/oy1200/work/a93/581700@2x.jpg",
+  annotation: "Плакат призывает к активной защите революции от врагов."
+},
+{
+  id: 36,
+  title: "За советскую Россию!",
+  author: "Неизвестен",
+  year: 1920,
+  theme: "гражданская война",
+  period: "1920-е",
+  keyImages: ["армия"],
+  imageUrl: "https://propagandahistory.ru/pics/2018/06/1528204637_7e6f.jpg",
+  annotation: "Плакат подчёркивает патриотический аспект поддержки советской Республики."
+},
+{
+  id: 37,
+  title: "Смерть белогвардейцам!",
+  author: "Неизвестен",
+  year: 1919,
+  theme: "гражданская война",
+  period: "1920-е",
+  keyImages: ["враг"],
+  imageUrl: "https://i.pinimg.com/736x/0c/5c/cd/0c5ccdfa3312b5439e32b3d9c31771e8.jpg",
+  annotation: "Антибелогвардейская пропаганда: образ белых как абсолютного врага, подлежащего уничтожению."
+},
+{
+  id: 38,
+  title: "Фашизм — враг человечества",
+  author: "Неизвестен",
+  year: 1942,
+  theme: "великая отечественная война",
+  period: "1940-е",
+  keyImages: ["враг"],
+  imageUrl: "https://www.prlib.ru/sites/default/files/book_preview/4bcf14dc-9eb8-42dc-951f-d1cdd69367cc/213874_doc1_9F24AC9D-6F64-41C1-98A8-DB896E16E950.jpg",
+  annotation: "Плакат представляет фашизм как всеобщую угрозу, противостоять которой должны все народы."
+},
+{
+  id: 39,
+  title: "За победу!",
+  author: "Неизвестен",
+  year: 1945,
+  theme: "великая отечественная война",
+  period: "1940-е",
+  keyImages: ["армия"],
+  imageUrl: "https://armedman.ru/wp-content/uploads/2015/02/Vpered-K-polnoy-pobede.jpg",
+  annotation: "Победный лозунг: финальный плакат, подводящий итог борьбы и фиксирующий её триумф."
+},
+{
+  id: 40,
+  title: "Красная армия защищает границы СССР",
+  author: "Неизвестен",
+  year: 1939,
+  theme: "советско‑финская война",
+  period: "1930-е",
+  keyImages: ["солдат"],
+  imageUrl: "https://i.pinimg.com/736x/07/f3/03/07f303eac9aaa8fdb72a23e21597d7dd.jpg",
+  annotation: "Плакат мобилизует на поддержку военной операции на северных границах, акцентируя защиту родины от внешних угроз."
+},
+{
+  id: 41,
+  title: "На страже северных рубежей",
+  author: "Неизвестен",
+  year: 1939,
+  theme: "советско‑финская война",
+  period: "1930-е",
+  keyImages: ["армия"],
+  imageUrl: "https://www.plakat-cccp.ru/filelibrary/administrator_/vov_/plakat/155/711/photomixSmoll_2.jpg",
+  annotation: "Образ солидарности армии и народа: Красная армия изображена как опора безопасности северной части СССР."
+},
+{
+  id: 42,
+  title: "За землю Советской Карелии!",
+  author: "Неизвестен",
+  year: 1944,
+  theme: "советско‑финская война",
+  period: "1940-е",
+  keyImages: ["солдат", "карта"],
+  imageUrl: "https://ursa-tm.ru/forum/uploads/monthly_2025_02/large.photo_2025-02-13_13-29-12.jpg.efc67243450473eab1d9a796c8cfe202.jpg",
+  annotation: "Плакат связывает военные действия с территорией Карелии, формируя ощущение борьбы за «наш» край."
+},
+{
+  id: 43,
+  title: "Против империалистической войны!",
+  author: "Неизвестен",
+  year: 1950,
+  theme: "холодная война",
+  period: "1950-е",
+  keyImages: ["враг", "мировой конфликт"],
+  imageUrl: "https://storage08.litfund.ru/images/lots/577s2/577s2-064-EK70-36-Y4184604.jpg",
+  annotation: "Плакат пропагандирует мирное сосуществование и противостоит «империалистической» угрозе, визуализируя глобальный конфликт."
+},
+{
+  id: 44,
+  title: "Мирное сосуществование — путь к миру",
+  author: "Неизвестен",
+  year: 1960,
+  theme: "холодная война",
+  period: "1960-е",
+  keyImages: ["мировой порядок", "дети"],
+  imageUrl: "https://img.vz.ru/upimg/614/614247.jpg",
+  annotation: "Образы детей и единого мира подчёркивают идею «мирного сосуществования» как альтернативы военной конфронтации."
+},
+{
+  id: 45,
+  title: "За ядерный контроль и мир",
+  author: "Неизвестен",
+  year: 1963,
+  theme: "холодная война",
+  period: "1960-е",
+  keyImages: ["мировой порядок"],
+  imageUrl: "https://blog.skillbox.by/wp-content/uploads/design/mirny-atom-v-grafike/c6abb84c6648466aae17c25451334e5b.webp",
+  annotation: "Плакат связывает идею разоружения и контроля над ядерным оружием с задачей сохранения мира на планете."
+}
 ];
-
 // ======================
 // STATE
 // ======================
